@@ -6,6 +6,5 @@ $ tar -xvf g-audit-logging.tar.gz
 
 2. execute apply_audit_logging.sh
 
-###### for scheduling script ######
+###### for scheduling script - filtering failed connect log ######
 1. execute filter_audit_log.sh
--- filter failed connect log
