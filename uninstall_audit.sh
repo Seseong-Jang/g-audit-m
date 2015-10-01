@@ -13,3 +13,5 @@ mysql -uroot -p${PW}  --max_allowed_packet=16M -e "SET GLOBAL server_audit_file_
 mysql -uroot -p${PW}  --max_allowed_packet=16M -e "UNINSTALL PLUGIN SERVER_AUDIT;"
 
 echo "======== gm connect logging stoped. ======="
+
+rm -rf /etc/cron.d/filter_cron

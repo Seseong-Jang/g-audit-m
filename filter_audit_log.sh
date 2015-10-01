@@ -1,8 +1,10 @@
 #!/bin/bash
 
+LOG_PATH=/data/mysql/server_audit.log 
+
 # need root permission
-cat /data/log/audit.log | grep FAILED | grep -v "172.16.100.21" >> `hostname`_audit.log
-cat /dev/null > /data/log/audit.log
+cat ${LOG_PATH} | grep FAILED | grep -v "172.16.100.21" >> `hostname`_audit.log
+cat /dev/null > ${LOG_PATH}
 
 expect -c "
         set timeout 600
