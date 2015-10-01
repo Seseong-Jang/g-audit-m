@@ -1,12 +1,13 @@
 # g-audit-m #
 
+###### extract tar.gz file ######
+tar -zxvf g-audit-logging.tar.gz
+
 ###### install g-audit-m ######
-1. extract tar.gz file
+run install_audit.sh {ROOT_PW}
 
-$ tar -xvf g-audit-logging.tar.gz
-
-
-2. execute apply_audit_logging.sh
+###### stop g-audit-m ######
+run stop_audit.sh {ROOT_PW}
 
 ###### for scheduling script - filtering failed connect log ######
-1. execute filter_audit_log.sh
+run filter_audit_log.sh
