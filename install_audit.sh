@@ -18,6 +18,7 @@ touch /backup/audit/audit.log
 mysql -uroot -p${PW} --max_allowed_packet=16M -e "INSTALL PLUGIN SERVER_AUDIT SONAME 'gm_connect_log.so';"
 mysql -uroot -p${PW} --max_allowed_packet=16M -e "SET GLOBAL server_audit_logging=ON;"
 mysql -uroot -p${PW} --max_allowed_packet=16M -e "SET GLOBAL server_audit_events=connect;"
-mysql -uroot -p${PW} --max_allowed_packet=16M -e "SET GLOBAL server_audit_file_path = /backup/audit/audit.log;"
+#mysql -uroot -p${PW} --max_allowed_packet=16M -e "SET GLOBAL server_audit_file_path = '/backup/audit/audit.log';"
 
 echo "======== gm connect logging installed. ======="
+
