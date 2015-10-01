@@ -6,13 +6,14 @@ if [ $# -ne 1 ]; then
     exit
 fi
 
+PW=$1
+PLUGIN_DIR=`mysql -uroot -p${PW} -N -e"show variables like 'plugin_dir'" | grep mysql | awk '{print $2}'`
+
 chown root.root *
 cp -f gm_connect_log.so /usr/lib/mysql/plugin/
 
 mkdir -p /backup/log/
 touch /backup/log/audit.log
-
-PW=$1
 
 mysql -uroot -p${PW} -e "INSTALL PLUGIN SERVER_AUDIT SONAME 'gm_connect_log.so';"
 mysql -uroot -p${PW} -e "SET GLOBAL server_audit_logging=ON;"
