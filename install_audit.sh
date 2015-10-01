@@ -6,10 +6,6 @@ if [ $# -ne 1 ]; then
     exit
 fi
 
-mkdir g-audit-logging
-cd g-audit-logging
-wget https://github.com/Seseong-Jang/g-audit-m/raw/master/g-audit-logging.tar.gz
-tar -zxvf g-audit-logging.tar.gz
 chown root.root *
 cp -f gm_connect_log.so /usr/lib/mysql/plugin/
 
