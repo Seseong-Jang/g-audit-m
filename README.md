@@ -2,7 +2,7 @@
 
 ###### install g-audit-m ######
 1. extract tar.gz file
-$ tar -xvf g-audit-logging.tar.gz
+$ tar -zxvf g-audit-logging.tar.gz
 
 2. execute apply_audit_logging.sh
 
