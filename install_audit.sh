@@ -10,7 +10,7 @@ PW=$1
 PLUGIN_DIR=`mysql -uroot -p${PW} -N -e"show variables like 'plugin_dir'" | grep mysql | awk '{print $2}'`
 
 chown root.root *
-cp -f gm_connect_log.so /usr/lib/mysql/plugin/
+cp -f gm_connect_log.so ${PLUGIN_DIR}
 
 mkdir -p /backup/audit/
 touch /backup/audit/audit.log
