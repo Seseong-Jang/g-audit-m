@@ -9,8 +9,8 @@ fi
 PW=$1
 
 mysql -uroot -p${PW} --max_allowed_packet=16M -e "SET GLOBAL server_audit_logging=OFF;"
-mysql -uroot -p${PW}  --max_allowed_packet=16M -e "SET GLOBAL server_audit_file_path='server_audit.log';"
-mysql -uroot -p${PW}  --max_allowed_packet=16M -e "UNINSTALL PLUGIN SERVER_AUDIT;"
+mysql -uroot -p${PW} --max_allowed_packet=16M -e "SET GLOBAL server_audit_file_path='server_audit.log';"
+mysql -uroot -p${PW} --max_allowed_packet=16M -e "UNINSTALL PLUGIN SERVER_AUDIT SONAME 'gm_connect_log.so';"
 
 echo "======== gm connect logging stoped. ======="
 
