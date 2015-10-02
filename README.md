@@ -1,15 +1,27 @@
-# g-audit-m #
+# g-audit-m
 
 support version: Mysql 5.5 ↑, MariaDB 10.0.21 ↑
 
-###### extract tar.gz file ######
-tar -zxvf g-audit-logging.tar.gz
++ extract tar.gz file
 
-###### install g-audit-m ######
-run install_audit.sh {ROOT_PW}
+`
+    tar -zxvf g-audit-logging.tar.gz
+`
 
-###### uninstall g-audit-m ######
-run uninstall_audit.sh {ROOT_PW}
++ install g-audit-m
 
-###### for scheduling script - filtering failed connect log ######
-run filter_audit_log.sh
+`
+    ./install_audit.sh {ROOT_PW}
+`
+
++ uninstall g-audit-m
+
+`
+    ./uninstall_audit.sh {ROOT_PW}
+`
+
++ for scheduling script - filtering failed connect log
+
+`
+    ./filter_audit_log.sh
+`
