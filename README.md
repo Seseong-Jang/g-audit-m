@@ -7,25 +7,16 @@ support version: Mysql 5.5 ↑, MariaDB 10.0.21 ↑
 `
     tar -zxvf g-audit-logging.tar.gz
 `
-
-
-
 + install g-audit-m
 
 `
     ./install_audit.sh {ROOT_PW}
 `
-
-
-
 + uninstall g-audit-m
 
 `
     ./uninstall_audit.sh {ROOT_PW}
 `
-
-
-
 + for scheduling script - filtering failed connect log
 
 `
