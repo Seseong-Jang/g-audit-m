@@ -1,6 +1,6 @@
 #!/bin/bash
 
-LOG_PATH=/data/mysql/server_audit.log 
+LOG_PATH=/data/mysql/server_audit.log
 
 # need root permission
 cat ${LOG_PATH} | grep FAILED | grep -v "172.16.100.21" >> `hostname`_audit.log
