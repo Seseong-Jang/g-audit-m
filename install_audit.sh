@@ -11,6 +11,8 @@ case $2 in
     "CentOS")
          yum install -y rsync
          yum install -y expect
+	 yum install -y cronie
+	 /etc/init.d/crond restart
          ;;
     "Ubuntu")
          apt-get install -y rsync
