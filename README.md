@@ -10,7 +10,7 @@ support version: Mysql 5.5 ↑, MariaDB 10.0.21 ↑
 + install g-audit-m
 
 `
-    ./install_audit.sh {ROOT_PW}
+    ./install_audit.sh {ROOT_PW} {CentOS | Ubuntu}
 `
 + uninstall g-audit-m
 
