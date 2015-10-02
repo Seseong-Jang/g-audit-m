@@ -31,7 +31,7 @@ chown root.root *
 cp -f gm_connect_log.so ${PLUGIN_DIR}
 echo "copy so file to ${PLUGIN_DIR}"
 
-#mkdir -p /backup/audit/
+mkdir -p /backup/audit/
 #touch /backup/audit/audit.log
 #echo "default folder and file create"
 
