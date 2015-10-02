@@ -42,6 +42,9 @@ mysql -uroot -p${PW} --max_allowed_packet=16M -e "SET GLOBAL server_audit_events
 
 echo "======== gm connect logging installed. ======="
 
+# copy script to /root
+cp filter_audit_log.sh /root
+
 # crontab install
 cp -f filter_cron /etc/cron.d/
 echo "======== crontab installed audit_loggin filter"
