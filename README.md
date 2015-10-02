@@ -1,5 +1,7 @@
 # g-audit-m #
 
+support version: Mysql 5.5 ↑, MariaDB 10.0.21 ↑
+
 ###### extract tar.gz file ######
 tar -zxvf g-audit-logging.tar.gz
 
